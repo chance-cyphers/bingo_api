@@ -9,6 +9,7 @@ defmodule BingoApiWeb.Router do
     pipe_through :api
 
     get "/", HomeController, :index
+
     get "/game", GameController, :get_game
     post "/game", GameController, :create_game
   end

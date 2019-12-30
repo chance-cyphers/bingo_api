@@ -4,7 +4,7 @@ use Mix.Config
 config :bingo_api, BingoApi.Repo,
   username: "postgres",
   password: "postgres",
-  database: "bingo_api_dev",
+  database: "postgres",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
