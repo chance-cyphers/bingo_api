@@ -10,7 +10,8 @@ defmodule BingoApiWeb.Router do
 
     get "/", HomeController, :index
 
-    get "/game", GameController, :get_game
+    get "/game", GameController, :index
+    get "/game/:id", GameController, :get_game
     post "/game", GameController, :create_game
   end
 end

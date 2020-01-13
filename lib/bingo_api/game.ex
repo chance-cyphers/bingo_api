@@ -1,3 +1,13 @@
+defmodule BingoApi.NewGame do
+  use Ecto.Schema
+  import Ecto.Changeset
+
+  embedded_schema do
+    field :title, :string
+    field :squares, {:array, :string}
+  end
+end
+
 defmodule BingoApi.Game do
   use Ecto.Schema
   import Ecto.Changeset
